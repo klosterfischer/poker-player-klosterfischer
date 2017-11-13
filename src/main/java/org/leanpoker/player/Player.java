@@ -11,7 +11,7 @@ public class Player {
     public static int betRequest(JsonElement request) {
         JsonObject myRequest = new com.google.gson.JsonElement;
 
-        return 500;
+        return 1000;
 
     }
 
