@@ -45,7 +45,7 @@ public class Player {
             }
 
             if(erste == 0 || zweite == 0) {
-                return 100;
+                return 50;
             }
 
         }
