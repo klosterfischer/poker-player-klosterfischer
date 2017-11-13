@@ -5,6 +5,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class Player {
 
@@ -29,7 +30,10 @@ public class Player {
         if(myHand.get(0).getAsJsonObject().get("rank").getAsString().equals(myHand.get(1).getAsJsonObject().get("rank").getAsString())  ) {
             return 1000;
         } else {
-            return 500;
+
+            //List keineBilder =
+
+            return 100;
         }
 
 /**
