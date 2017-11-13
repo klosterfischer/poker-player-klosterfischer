@@ -9,8 +9,8 @@ public class Player {
     static final String VERSION = "Default Java folding player";
 
     public static int betRequest(JsonElement request) {
-        //request.
-        return 10000;
+        //JsonObject myRequest = New com.google.gson.JsonElement
+        return 1000;
 
     }
 
