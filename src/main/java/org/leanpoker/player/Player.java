@@ -9,7 +9,7 @@ public class Player {
     static final String VERSION = "Default Java folding player";
 
     public static int betRequest(JsonElement request) {
-        return current_buy_in - players[in_action][bet];
+        return current_buy_in - players[in_action][bet] + minimum_raise;
     }
 
     public static void showdown(JsonElement game) {
