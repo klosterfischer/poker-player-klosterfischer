@@ -10,13 +10,17 @@ public class Player {
     private static JsonObject myRequest;
 
     public static int betRequest(JsonElement request) {
-        for (Map.Entry<String, JsonElement> entry : request.getAsJsonObject().entrySet()) {
+        JsonObject myRequest = request.getAsJasonObject();
+        JsonElement potelement = myRequest.get("pot");
+        int pot = potelement.getAsInt();
 
-            System.out.println(entry.getKey() + " : " + entry.getValue());
-
+        if(pot >100) {
+            return pot * 2;
+        } else {
+            return 0;
         }
 
-        return 500;
+
 
     }
 
