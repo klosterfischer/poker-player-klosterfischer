@@ -16,7 +16,7 @@ public class Player {
 
         }
 
-        return 1000;
+        return 500;
 
     }
 
