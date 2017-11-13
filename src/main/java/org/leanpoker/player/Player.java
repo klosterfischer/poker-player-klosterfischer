@@ -9,13 +9,13 @@ public class Player {
     static final String VERSION = "Default Java folding player";
 
     public static int betRequest(JsonElement request) {
-        JsonObject myRequest = request.getAsJasonObject();
+        JsonObject myRequest = request.getAsJsonObject();
         JsonElement potelement = myRequest.get("pot");
         int pot = potelement.getAsInt();
 
         //JsonElement listElement = myRequest.get("players");
 
-        //Array myPlayers = listElement.
+        //Array myPlayers =
 
         if(pot < 7) {
             return 500;
