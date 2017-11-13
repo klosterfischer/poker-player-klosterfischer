@@ -30,10 +30,24 @@ public class Player {
         if(myHand.get(0).getAsJsonObject().get("rank").getAsString().equals(myHand.get(1).getAsJsonObject().get("rank").getAsString())  ) {
             return 1000;
         } else {
+            int erste = 0;
+            try {
+                erste = Integer.getInteger(myHand.get(0).getAsJsonObject().get("rank").getAsString());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
-            //List keineBilder =
+            int zweite = 0;
+            try {
+                zweite = Integer.getInteger(myHand.get(1).getAsJsonObject().get("rank").getAsString());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
-            return 100;
+            if(erste == 0 || zweite == 0) {
+                return 100;
+            }
+
         }
 
 /**
