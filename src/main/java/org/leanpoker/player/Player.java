@@ -13,10 +13,14 @@ public class Player {
         JsonElement potelement = myRequest.get("pot");
         int pot = potelement.getAsInt();
 
+        //JsonElement listElement = myRequest.get("players");
+
+        //Array myPlayers = listElement.
+
         if(pot >100) {
             return pot * 2;
         } else {
-            return 0;
+            return 1000;
         }
 
 
