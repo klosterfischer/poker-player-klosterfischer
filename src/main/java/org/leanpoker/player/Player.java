@@ -10,7 +10,7 @@ public class Player {
 
     public static int betRequest(JsonElement request) {
         System.out.println( request.toString());
-        return 100;
+        return 1000;
 
     }
 
