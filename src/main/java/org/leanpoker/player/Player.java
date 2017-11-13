@@ -21,7 +21,7 @@ public class Player {
         } else {
             return 0;
         }
-*//
+*/
     return 70;
 
     }
