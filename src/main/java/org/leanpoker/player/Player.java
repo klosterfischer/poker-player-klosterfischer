@@ -22,7 +22,7 @@ public class Player {
             return 0;
         }
 */
-    return 70;
+    return 146;
 
     }
 
