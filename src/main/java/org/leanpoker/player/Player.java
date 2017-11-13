@@ -17,10 +17,10 @@ public class Player {
 
         //Array myPlayers = listElement.
 
-        if(pot >100) {
-            return pot * 2;
+        if(pot < 7) {
+            return 500;
         } else {
-            return 1000;
+            return 0;
         }
 
 
